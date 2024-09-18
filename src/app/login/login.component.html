@@ -1,0 +1,63 @@
+<!-- HTML -->
+<div class=" auth-container ">
+  <div class="row justify-content-center align-items-center min-vh-100 ">
+    <div class="col-12 form ">
+      <div class="card shadow-lg auth-card rounded-lg">
+        <div class="card-body p-5">
+          <h2 class="text-center mb-4">{{ isLoginMode ? 'Login' : 'Sign Up' }}</h2>
+          <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input id="username" type="text" class="form-control form-control-lg" formControlName="username" placeholder="Enter your username">
+              <div *ngIf="authForm.get('username')?.invalid && authForm.get('username')?.touched" class="text-danger mt-2">
+                <small *ngIf="authForm.get('username')?.errors?.['required']">Username is required.</small>
+                <small *ngIf="authForm.get('username')?.errors?.['pattern']">Username must contain only letters.</small>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" type="password" class="form-control form-control-lg" formControlName="password" placeholder="Enter your password">
+              <div *ngIf="authForm.get('password')?.invalid && authForm.get('password')?.touched" class="text-danger mt-2">
+                <small *ngIf="authForm.get('password')?.errors?.['required']">Password is required.</small>
+                <small *ngIf="authForm.get('password')?.errors?.['minlength']">Password must be at least 8 characters.</small>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn" [disabled]="authForm.invalid">
+              {{ isLoginMode ? 'Login' : 'Sign Up' }}
+            </button>
+          </form>
+
+          <button class="btn btn-link mt-3 d-block mx-auto switch-mode-btn" (click)="onSwitchMode()">
+            {{ isLoginMode ? 'Switch to Signup' : 'Switch to Login' }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4" ></div>
+    <div class="col-xl-2 col-md-2 col-sm-2 col-lg-2 demo">
+      <div class="card" style="width: 20rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4" style="background-color: antiquewhite;"></div> -->
+    <!-- <div class="col-3" style="background-color: antiquewhite;">H</div> -->
+    <!-- <div class="row">
+      <div class="col-3" style="background-color: antiquewhite;">H</div>
+    </div> 
+  </div>
+</div> -->

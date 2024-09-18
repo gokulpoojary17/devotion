@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* body{
+    background-color: rgb(146, 190, 248);
+} */
+
+body {
+    /* background: radial-gradient(circle, rgb(238, 238, 153), rgb(224, 213, 106), rgba(255, 208, 0, 0.753)); */
+    background-image: url('/360_F_667495853_ioWBMm32u7UFvcYz0Sb3KrGj8YjnfrQA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image on the screen */
+}
+
+@media screen and (max-width:450px){
+    body {
+        background-image: url('/360_F_667495853_ioWBMm32u7UFvcYz0Sb3KrGj8YjnfrQA.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensures the entire image is visible without being cropped */
+        background-position: center;    }
+}
+
