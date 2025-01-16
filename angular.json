@@ -104,8 +104,11 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": false
+=======
+>>>>>>> origin/master
   }
 }

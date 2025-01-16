@@ -7,12 +7,20 @@
 }
 
 .nav-link{
+<<<<<<< HEAD
     color: rgb(250, 122, 3);
     font-weight: 600;
 }
 
 .nav-link:hover{
     color: rgb(42, 6, 245);
+=======
+    color: rgb(231, 201, 32);
+}
+
+.nav-link:hover{
+    color: rgb(245, 6, 6);
+>>>>>>> origin/master
 }
 
 .navbar-brand{

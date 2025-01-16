@@ -15,10 +15,17 @@ img {
 }
 .card {
     height: 180px;
+<<<<<<< HEAD
     color: rgb(255, 137, 2);
     text-align: center;
     align-items: center;
     /* background-color:transparent; */
+=======
+    color: rgb(250, 248, 244);
+    text-align: center;
+    align-items: center;
+    background-color:transparent;
+>>>>>>> origin/master
     border: 1px solid rgb(228, 228, 39); /* Keeps the yellow border */
     border-radius: 10px; /* Slightly rounds the corners for a smoother look */
     box-shadow: 0 4px 8px rgba(252, 243, 170, 0.938), 
