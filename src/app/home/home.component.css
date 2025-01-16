@@ -1,0 +1,86 @@
+/* html, body {
+    height: 100%;
+    margin: 0;
+} */
+
+/* .image-container {
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
+} */
+
+img {
+    max-width: 500px; /* Ensure the image scales if it's too big */
+    height: auto;    /* Maintain aspect ratio */
+}
+.card {
+    height: 180px;
+    color: rgb(255, 137, 2);
+    text-align: center;
+    align-items: center;
+    /* background-color:transparent; */
+    border: 1px solid rgb(228, 228, 39); /* Keeps the yellow border */
+    border-radius: 10px; /* Slightly rounds the corners for a smoother look */
+    box-shadow: 0 4px 8px rgba(252, 243, 170, 0.938), 
+                0 6px 20px rgba(253, 221, 75, 0.938); /* Creates a 3D shadow effect */
+    padding: 20px; /* Adds padding for better spacing */
+    transition: transform 0.3s ease; /* Adds a transition for hover effect */
+    /* width: 600px;
+    margin: 10px; */
+}
+
+/* Optional: Hover effect to enhance the 3D feel */
+.card:hover {
+    transform: translateY(-10px); /* Slightly lifts the card on hover */
+    box-shadow: 
+                10px  
+                 24px 24px rgba(245, 193, 51, 0.979); /* Intensifies shadow on hover */
+                 background:linear-gradient(to bottom,rgb(252, 252, 114),rgb(243, 167, 25));
+                 color:black
+}
+.line{
+    font-size: large;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn{
+    background: linear-gradient(to bottom ,yellow,orange);
+    color: black;
+    display: flex;
+}
+
+@media screen and (max-width: 450px) {
+    img {
+        max-width: 70%;
+        margin-top: 80px; /* Ensure the image scales if it's too big */
+    }
+
+    .card{
+/* margin-top: 1px; */
+margin:100px 0 10px 10px;
+height:220px;
+font-family: 'Times New Roman', Times, serif;
+
+    }
+
+   
+}
+
+/* CSS for spinning animation */
+/* @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin {
+    animation: spin 7s linear infinite; 
+  } */
+  

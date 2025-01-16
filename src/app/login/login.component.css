@@ -1,0 +1,64 @@
+/* CSS */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background-color: #f8f9fa; Light background for contrast */
+    padding: 20px; /* Ensure space on smaller screens */
+  }
+  .form{
+    margin-top: 2px;
+  }
+  .auth-card {
+    width: 100%;
+    max-width: 400px; /* Set a max-width for better responsiveness */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Smooth shadow effect */
+  }
+  
+  .auth-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced hover effect */
+  }
+  
+  .card-body {
+    padding: 2rem;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .switch-mode-btn {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .switch-mode-btn:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  .demo{
+    background-color: #0056b3;
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {  
+    .demo{
+        background-color: black;
+    }
+  }
+
+  

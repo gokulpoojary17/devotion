@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .card-container {
+        padding: 0 10px; /* Left and right padding for mobile */
+    }
+}
+
+/* Default: no padding on desktop */
+.card-container {
+    padding: 0; /* Ensure no horizontal gaps for larger screens */
+}

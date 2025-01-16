@@ -1,0 +1,21 @@
+.offcanvas{
+    width: 190px;
+}
+
+.navbar {
+    background-color: transparent; /* Transparent background */
+}
+
+.nav-link{
+    color: rgb(250, 122, 3);
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: rgb(42, 6, 245);
+}
+
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+}
+
